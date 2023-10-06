@@ -10,13 +10,13 @@ const config = {
 const mysql = require('mysql')
 const connection = mysql.createConnection(config)
 
-const sql = `INSERT INTO people(name) values('Wesley')`
+const sql = `INSERT INTO people(name) values('Mateus')`
 connection.query(sql)
 connection.end()
 
 
 app.get('/', (req,res) => {
-    res.send('<h1>Full Cycle</h1>')
+    res.send('<h1>Full Cycle</h1><p>Programador Camisa 10</p>')
 })
 
 app.listen(port, ()=> {
